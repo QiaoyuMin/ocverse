@@ -5,27 +5,42 @@
 - **背景**：之前用 Bubble.io 做过无代码版本，功能有：登录、角色增删改查、世界观设定、富文本编辑、标签页、作品和故事模块。
 - **开发者**：编程新手，边做边学。
 
-## 学习路线
-1. HTML/CSS 做静态角色卡页面，发布到 GitHub Pages
-2. JavaScript 加交互
-3. Next.js + Supabase 实现登录和数据库
-4. 部署到 Vercel
+## 学习路线（8 步）
+1. [x] HTML/CSS 静态角色卡（练习文件保留在 `practice/`）
+2. [ ] Next.js 项目骨架，并部署到 Vercel
+3. [ ] Supabase 注册登录
+4. [ ] 角色增删改查
+5. [ ] 角色详情页和标签页
+6. [ ] 作品模块（图片上传）
+7. [ ] 故事模块（富文本）
+8. [ ] 世界观模块、权限、手机适配
 
 ## 当前进度
-- **第一步**（进行中）：已建好第一个静态角色卡页面 `index.html` + `style.css`，等待发布到 GitHub Pages。
+- **第 1 步**：已完成。
+- **第 2 步**（进行中）：Next.js 项目已建好，有导航栏、首页、角色列表页，内容是假数据。下一步是部署到 Vercel。
+
+## 技术选择
+- Next.js 16（App Router），用 JavaScript（不用 TypeScript），样式用普通 CSS（`app/globals.css`），不用 Tailwind。
+- 本地运行：`npm install` 然后 `npm run dev`，浏览器打开 http://localhost:3000 。
 
 ## 文件结构
-- `index.html`：角色卡页面的内容（HTML）
-- `style.css`：角色卡页面的样式（CSS）
+- `practice/`：第 1 步的练习文件（`index.html` + `style.css`），只保留做纪念，不参与网站。
+- `app/layout.js`：所有页面共用的外框（导航栏、页脚）。
+- `app/page.js`：首页（网址 `/`）。
+- `app/characters/page.js`：角色列表页（网址 `/characters`）。
+- `app/globals.css`：全站样式。
+- `components/Navbar.js`：导航栏组件。
+- `components/CharacterCard.js`：角色卡组件。
+- `data/characters.js`：假的角色数据，第 4 步会换成 Supabase 数据库。
 
 ## 以后想做的功能
-- 在网页上直接编辑角色卡（改名字、标签、故事等）。计划分三层实现：
-  1. 第二步用 JavaScript 做编辑功能，改完页面立刻变化，但刷新会丢失。
-  2. 再用浏览器的 localStorage 把修改存在自己的浏览器里，刷新不丢。
-  3. 第三步接入 Supabase 数据库，存到服务器上，换设备也能看到，别人也能看到。
+- 在网页上直接编辑角色卡（改名字、标签、故事等）。按新路线，这会在第 4 步「角色增删改查」里实现，数据存到 Supabase，换设备和别人都能看到。
 
 ## 教学要求（给 Claude 的规则）
 - 每段代码用简单中文解释在做什么。
 - 一次不要改太多。
 - 改完告诉我怎么看效果。
 - 每做完一个阶段，或者用户有新想法，都要更新这个文件的「当前进度」和「以后想做的功能」。
+
+## Next.js 给 AI 的规则
+@AGENTS.md
