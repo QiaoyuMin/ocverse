@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 允许上传示例文件（真正的 .env.local 仍然被上面的 .env* 排除）
+!.env.local.example
