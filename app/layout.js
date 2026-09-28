@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         <main className="container">{children}</main>
-        <footer className="site-footer">OCverse · 第 2 步：Next.js 项目骨架</footer>
+        <footer className="site-footer">OCverse · 第 3 步：注册登录</footer>
       </body>
     </html>
   );
