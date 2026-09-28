@@ -7,7 +7,7 @@
 
 ## 学习路线（8 步）
 1. [x] HTML/CSS 静态角色卡（练习文件保留在 `practice/`）
-2. [ ] Next.js 项目骨架，并部署到 Vercel
+2. [x] Next.js 项目骨架，并部署到 Vercel
 3. [ ] Supabase 注册登录
 4. [ ] 角色增删改查
 5. [ ] 角色详情页和标签页
@@ -17,7 +17,8 @@
 
 ## 当前进度
 - **第 1 步**：已完成。
-- **第 2 步**（进行中）：Next.js 项目已建好，有导航栏、首页、角色列表页，内容是假数据。下一步是部署到 Vercel。
+- **第 2 步**：已完成。Next.js 项目有导航栏、首页、角色列表页，内容是假数据，已部署到 Vercel，每次推送代码会自动重新部署。
+- **第 3 步**（下一步）：Supabase 注册登录。
 
 ## 技术选择
 - Next.js 16（App Router），用 JavaScript（不用 TypeScript），样式用普通 CSS（`app/globals.css`），不用 Tailwind。
