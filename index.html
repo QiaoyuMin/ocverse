@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <!-- 告诉浏览器：这个页面用 UTF-8 编码，可以正常显示中文 -->
+  <meta charset="UTF-8">
+  <!-- 让页面在手机上也能正常缩放显示 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 浏览器标签页上显示的标题 -->
+  <title>OCverse - 角色卡</title>
+  <!-- 引入外面的样式文件 style.css，页面的"长相"都在那里定义 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 页面顶部：网站名字 -->
+  <header class="site-header">
+    <h1>OCverse</h1>
+    <p>中文原创角色创作平台</p>
+  </header>
+
+  <!-- 页面主体：一张角色卡 -->
+  <main>
+    <article class="card">
+
+      <!-- 角色头像。现在先用一个占位图，以后换成真实图片 -->
+      <img class="card-avatar" src="https://placehold.co/200x200/7c5cff/ffffff?text=OC" alt="角色头像">
+
+      <!-- 角色名字和一句话简介 -->
+      <h2 class="card-name">林小夜</h2>
+      <p class="card-tagline">游走于城市夜色中的画师</p>
+
+      <!-- 标签：用列表（ul）装几个小标签（li） -->
+      <ul class="card-tags">
+        <li>画师</li>
+        <li>夜猫子</li>
+        <li>现代都市</li>
+      </ul>
+
+      <!-- 基本信息：用"定义列表"dl，dt 是名称，dd 是内容 -->
+      <dl class="card-info">
+        <dt>年龄</dt><dd>22</dd>
+        <dt>性别</dt><dd>女</dd>
+        <dt>职业</dt><dd>自由插画师</dd>
+        <dt>所属世界</dt><dd>霓虹之城</dd>
+      </dl>
+
+      <!-- 角色背景故事 -->
+      <section class="card-story">
+        <h3>背景故事</h3>
+        <p>小夜白天在咖啡店打工，晚上在天台画城市的灯光。她相信每一盏灯背后都有一个还没被讲述的故事。</p>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 页面底部 -->
+  <footer class="site-footer">
+    <p>OCverse · 第一步：静态角色卡</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* ========== 整个页面的基础设置 ========== */
+
+/* 让所有元素的宽度计算方式更好理解：padding 和 border 算在宽度里面 */
+* {
+  box-sizing: border-box;
+}
+
+/* body 是整个页面的"身体"，这里设置背景色、文字颜色和字体 */
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  background-color: #f3f0ff;   /* 淡紫色背景 */
+  color: #333;                 /* 深灰色文字 */
+}
+
+/* ========== 页面顶部 ========== */
+
+.site-header {
+  text-align: center;          /* 文字居中 */
+  padding: 32px 16px;          /* 上下 32px、左右 16px 的内边距 */
+}
+
+.site-header h1 {
+  margin: 0;
+  color: #7c5cff;              /* 紫色标题 */
+  font-size: 36px;
+}
+
+.site-header p {
+  margin: 8px 0 0;
+  color: #777;
+}
+
+/* ========== 角色卡 ========== */
+
+/* 卡片本身：白色背景、圆角、阴影 */
+.card {
+  max-width: 400px;            /* 最宽 400px，再宽就不会继续变宽 */
+  margin: 0 auto;              /* 上下 0，左右 auto = 水平居中 */
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 16px;         /* 圆角 */
+  box-shadow: 0 8px 24px rgba(124, 92, 255, 0.15);  /* 淡淡的紫色阴影 */
+  text-align: center;
+}
+
+/* 头像：变成圆形 */
+.card-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;          /* 50% 的圆角 = 正圆 */
+  border: 4px solid #e8e2ff;
+}
+
+.card-name {
+  margin: 16px 0 4px;
+  font-size: 24px;
+}
+
+.card-tagline {
+  margin: 0;
+  color: #777;
+  font-style: italic;          /* 斜体 */
+}
+
+/* 标签列表：横着排，去掉默认的小圆点 */
+.card-tags {
+  list-style: none;            /* 去掉列表前面的圆点 */
+  padding: 0;
+  margin: 16px 0;
+  display: flex;               /* 让子元素横着排 */
+  justify-content: center;     /* 横向居中 */
+  gap: 8px;                    /* 标签之间的间距 */
+  flex-wrap: wrap;             /* 放不下就换行 */
+}
+
+.card-tags li {
+  background-color: #e8e2ff;
+  color: #5a3fd6;
+  padding: 4px 12px;
+  border-radius: 999px;        /* 很大的圆角 = 胶囊形状 */
+  font-size: 13px;
+}
+
+/* 基本信息：两列排版，左边名称、右边内容 */
+.card-info {
+  display: grid;               /* 用网格布局 */
+  grid-template-columns: 80px 1fr;  /* 左列固定 80px，右列占剩下的空间 */
+  gap: 8px 12px;
+  margin: 16px 0;
+  text-align: left;
+}
+
+.card-info dt {
+  color: #999;
+  font-size: 14px;
+}
+
+.card-info dd {
+  margin: 0;
+}
+
+/* 背景故事 */
+.card-story {
+  text-align: left;
+  border-top: 1px solid #eee;  /* 上面画一条浅灰色分割线 */
+  padding-top: 16px;
+}
+
+.card-story h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #7c5cff;
+}
+
+.card-story p {
+  margin: 0;
+  line-height: 1.7;            /* 行距大一点，读起来舒服 */
+}
+
+/* ========== 页面底部 ========== */
+
+.site-footer {
+  text-align: center;
+  padding: 32px 16px;
+  color: #aaa;
+  font-size: 13px;
+}
